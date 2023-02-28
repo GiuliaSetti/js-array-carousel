@@ -57,7 +57,16 @@ upArrowEl.addEventListener("click", function(){
 
         activeImageEl.src = images[index]; 
 
-    } 
+    } else {
+
+
+        index = images.length - 1;
+
+        
+        console.log(index);
+
+        activeImageEl.src = images[index]; 
+    }
 
 
 
@@ -71,6 +80,14 @@ downArrowEl.addEventListener("click", function(){
 
 
         index++;
+
+        console.log(index);
+    
+        activeImageEl.src = images[index];
+
+    } else {
+
+        index = 0;
 
         console.log(index);
     
