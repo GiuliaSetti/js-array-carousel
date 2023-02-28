@@ -8,3 +8,58 @@
 .debug *{
     font-family: 'Montserrat', sans-serif;
 }
+
+/* MAIN CONTENT */
+
+.container{
+    padding-top: 5rem;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.carousel_container{
+    max-width: 900px;
+    margin: 2rem auto;
+
+    position: relative;
+}
+
+img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    
+    object-fit: contain;
+    object-fit: cover;
+
+}
+
+
+button{
+    color: white;
+
+    padding: 10px 15px;
+
+    border: transparent;
+    border-radius:50%;
+    background-color: rgba(128, 128, 128, 0.5);
+    cursor: pointer;
+}
+
+#down_arrow{
+    position: absolute;
+
+    transform: translate(-50%);
+    left: 50%;
+    bottom: 10px;
+}
+
+#up_arrow{
+    position: absolute;
+    
+    right: 50%;
+    transform: translate(50%);
+    top: 10px;
+}
