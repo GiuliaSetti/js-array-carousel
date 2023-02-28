@@ -46,22 +46,36 @@ activeImageEl.src = images[index];
 
 upArrowEl.addEventListener("click", function(){
 
-    index--;
 
-    console.log(index);
+    // prova ciclo
 
-    activeImageEl.src = images[index]; 
+    if (index > 0){
+
+        index--;
+
+        console.log(index);
+
+        activeImageEl.src = images[index]; 
+
+    } 
+
+
 
 });
 
 
 downArrowEl.addEventListener("click", function(){
 
-    index++;
 
-    console.log(index);
+    if (index < images.length - 1){
 
-    activeImageEl.src = images[index];
 
+        index++;
+
+        console.log(index);
+    
+        activeImageEl.src = images[index];
+
+    }
 
 });
