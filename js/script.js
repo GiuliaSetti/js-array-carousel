@@ -21,3 +21,23 @@ Premo il pulsante su:
     °l'indice diminuisce.
 
 */
+
+
+const images = [
+    "img/01.webp",
+    "img/02.webp",
+    "img/03.webp",
+    "img/04.webp",
+    "img/05.webp"
+];
+
+// console.log(images);
+
+const upArrowEl = document.getElementById("up_arrow");
+
+const downArrowEl = document.getElementById("down_arrow");
+
+const activeImageEl = document.getElementById("active_image");
+
+
+let index = 0
