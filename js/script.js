@@ -22,16 +22,14 @@ Premo il pulsante su:
 
 */
 
+// array
 
-const images = [
-    "img/01.webp",
-    "img/02.webp",
-    "img/03.webp",
-    "img/04.webp",
-    "img/05.webp"
-];
+const images = ["img/01.webp", "img/02.webp", "img/03.webp", "img/04.webp", "img/05.webp"];
 
 // console.log(images);
+
+
+// variabili
 
 const upArrowEl = document.getElementById("up_arrow");
 
@@ -39,5 +37,31 @@ const downArrowEl = document.getElementById("down_arrow");
 
 const activeImageEl = document.getElementById("active_image");
 
+// index
 
-let index = 0
+let index = 0;
+
+activeImageEl.src = images[index];
+
+
+upArrowEl.addEventListener("click", function(){
+
+    index--;
+
+    console.log(index);
+
+    activeImageEl.src = images[index]; 
+
+});
+
+
+downArrowEl.addEventListener("click", function(){
+
+    index++;
+
+    console.log(index);
+
+    activeImageEl.src = images[index];
+
+
+});
